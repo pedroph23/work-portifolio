@@ -1,0 +1,10 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto; /*Centralizar*/
+    /* padding: 0 60px; */
+    /* display: grid;
+    grid-template-areas: 
+       "lgo ... nav";
+    grid-template-columns: auto 1fr auto; */
+    align-content: center;
+}

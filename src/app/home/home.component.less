@@ -1,0 +1,148 @@
+#itimage{
+    transform-origin: 181% 147%;//219% 232%;
+    transform: scale(0.9) rotateX(656deg) rotateY(368deg) rotateZ(771deg);
+    box-shadow: 20px 56px 37px #232323cf; 
+}
+#jsimage{
+    transform-origin: 159% 86%;
+    transform: scale(0.8) rotateX(656deg) rotateY(368deg) rotateZ(771deg);
+    box-shadow: 20px 56px 37px #232323cf;
+}
+
+.title {
+    color: white;
+    font-size: 58px;
+}
+.sub-title{
+    color: white;
+    font-size: 20px;
+}
+.container-title {
+    margin-left: 20%;
+}
+.container-skills {
+    display: flex;
+    justify-content: center;
+}
+.container-companies {
+    display: flex;
+    flex-direction: row;
+}
+.container-skills img {
+    width: 5%;
+    margin: 2%;
+    filter: grayscale(100%); 
+}
+.container-skills img:hover {
+    filter: grayscale(0%); 
+    transition: all .4s cubic-bezier(0.4, 0, 1, 1);
+}
+.container-float {
+    background: linear-gradient(135deg,#8224ff 30%,#4b00ff 60%,#9885ff);
+    height: 93vh;
+    width: 80%;
+    transform-origin: 0 -34%;
+    transform: scale(0.8);
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 17px 13px 22px #232323cf;
+    position: static;
+}
+.text-companies{
+    font-size: 20px;
+}
+
+.line-companies {
+    /* border: 0;
+    border-top: 1px solid #000;
+    width: 30%;
+    margin-left: 1%;
+    margin-top: 2%;
+    padding-right: 35%; */
+    /* transform: scale(0);
+    transform-origin: 0%;
+    transition: all .4s ease-in; */
+}
+.line-companies-open{
+    border: 0;
+    border-top: 1px solid #000;
+    width: 30%;
+    margin-left: 1%;
+    margin-top: 2%;
+    padding-right: 35%;
+    /* transform-origin: 0%;
+    transition: all .4s ease-in; */
+}
+.line-companies-close{
+    border: 0;
+    border-top: 1px solid #000;
+    width: 0%;
+    margin-left: 1%;
+    margin-top: 2%;
+    padding-right: 0%;
+    /* transform-origin: 0%;*/
+    transition: all .4s ease-in; 
+}
+.card-perfil {
+    background-color: white;
+    height: 30vh;
+    width: 17%;
+    margin: 2%;
+    border-radius: 5%;
+}
+
+.card-perfil img {
+    width: 92%;
+    margin: 4%;
+    height: 93%;
+    filter: grayscale(100%); 
+}
+
+section:nth-child(1) {
+    background-color: #404040;
+    height: 100vh;
+    width: 100%;
+    
+}
+section:nth-child(2) {
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.browser-menu p {
+    font-size: 20px;
+}
+.choise-companies:hover {
+
+    position: relative;
+    z-index: 1;
+    color: darkslateblue;
+
+    &:before {
+        border-top: 1px solid #000;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+    }
+
+        span { 
+            /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+            background: #f8f8f8; 
+            padding: 0 15px; 
+        }
+    animation-name: line-grow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line-grow {
+    from {
+      stroke-dasharray: 0, 1000;
+    }
+    to {
+      stroke-dasharray: 1000, 1000;
+    }
+  }

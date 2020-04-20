@@ -1,0 +1,118 @@
+<body style="margin">
+    <header>
+        <app-nav-bar>
+            <ng-template [ngIf]="options">
+                <app-nav-bar-options [options]=options></app-nav-bar-options>
+            </ng-template>
+        </app-nav-bar>
+    </header>
+    <app-container>
+        <ng-template [ngIf]="true">
+        <section id="inicio" style="overflow-y: hidden; overflow-x: hidden;">
+                <div class="container-parent">
+                    <div>
+                        <div class="animated 1 bounceInLeft delay-2s">
+                            <img id="itimage" src="../../assets/img/it.jpg"/>
+                        </div>
+                        <div class=container-title>
+                            <p class="title">
+                                Bem vindo ao meu portifólio !
+                            </p>
+                            <p class="sub-title">Aqui você poderar um pouco mais do meu perfil</p>
+                        </div>
+                        <div class="animated 1 bounceInRight delay-3s">
+                            <img id="jsimage" src="../../assets/img/jsimage.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre">
+                <div class="container-float">
+                    <div style="margin:1%;">
+                        <div>
+                            <div>
+                                <p style="font-size: 3.5em; color: white; text-shadow: 2px 2px 4px #000000;"> Quem eu
+                                    sou ?</p>
+                            </div>
+                            <div class="card-perfil">
+                                <img src="../../assets/img/me.jpeg" sizes="2px" />
+                            </div>
+                        </div>
+                        <div style="font-size: 2.5em; color: white; text-align: justify; margin: auto;">
+                            <h4>Olá ! Meu nome é Pedro Henrique.</h4>
+                            <p>Sou o formado em Ciência da Computação no UniCEUB e atualmente estou atuando como
+                                Analista de Sistemas como Full Stack em São Paulo. Tenho uma grande paixão pela aréa de
+                                tecnologia da informação,
+                                assim estudar essa aréa é um hobby para mim. Meus hobbys são, praticar esportes, dança
+                                nordestina, jogar jogos de ótimo conteudo e fazer leituras de temas academicos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" style="height: 50vh;">
+                <div style="margin: 1%">
+                    <div>
+                        <p style="font-size: 58px;">Skills</p>
+                        <p style="font-size: 1.5em;">As principais tecnologias que tenho conhecimento</p>
+                    </div>
+                    <div class="container-skills">
+                        <img src="../../assets/img//logo/angular-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/javascript-js-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/postqresql-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/react-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/spring-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/ionic-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/docker-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/nodejs-seeklogo.com.svg" />
+                        <img src="../../assets/img/logo/java-seeklogo.com.svg" />
+                    </div>
+                </div>
+            </section>
+            <section style="background-color: #f8f8f8; height: 70vh;">
+                <div style="margin: 1%">
+                    <div>
+                        <p style="font-size: 58px;">Empresas em que eu atuei</p>
+                    </div>
+                    <div class="container-companies">
+                        <div class="browser-menu" style=" margin: 2%; width: 50%;">
+                            <ul>
+                                <li>
+                                    <p class="choise-companies" (mouseover)="showImage('basis')">
+                                        <span> BASIS TECNOLOGIA DA INFORMAÇÃO </span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="choise-companies" (mouseover)="showImage('ibm')">  
+                                        <span> INTERNATIONAL BUSINESS MACHINES- IBM </span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="choise-companies" (mouseover)="showImage('bancoOriginal')">
+                                        <span>BANCO ORIGINAL</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="browser-galery">
+                            <div *ngIf="id === 'basis'">
+                                <img src="../../assets/img/basis.png" />
+                            </div>
+                            <div *ngIf="id === 'ibm'">
+                                <img src="../../assets/img/ibm.jpg" />
+                            </div>
+                            <div *ngIf="id === 'bancoOriginal'">
+                                <img src="../../assets/img/bancoOriginal.jpg" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section>
+            </section>
+            <h1 class="animated 1 fadeInRightBig delay-2s">Example</h1>
+
+        </ng-template>
+    </app-container>
+</body>
